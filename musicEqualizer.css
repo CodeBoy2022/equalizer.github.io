@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+}
+.mainArea {
+    width: 95%;
+    height: 42vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.equalizerMainArea {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:teal;
+}
+.equalizerArea {
+    width: 45vw;
+    height: 20vw;
+    display: flex;
+}
+.equalizerControl {
+    width: 45vw;
+    height: 20vw;
+}
+
+.lizerParts {
+    width: 10vw;
+    height: 20vw;
+    margin: 0.4vw;
+}
+
+.lizer1 {
+    width: 100%;
+    height: 1.2vw;
+    background-color: rgb(252, 63, 63);
+    box-shadow: 0vw 0vw 0.5vw 0.5vw rgb(151, 154, 154);
+    margin: 0vw 0vw 0.2vw 0vw;
+}
+.lizer2 {
+    width: 100%;
+    height: 1.2vw;
+    background-color: rgb(251, 251, 54);
+    box-shadow: 0vw 0vw 0.5vw 0.5vw rgb(151, 154, 154);
+    margin: 0vw 0vw 0.2vw 0vw;
+}
+.lizer3 {
+    width: 100%;
+    height: 1.2vw;
+    background-color: rgb(57, 255, 57);
+    box-shadow: 0vw 0vw 0.5vw 0.5vw rgb(151, 154, 154);
+    margin: 0vw 0vw 0.2vw 0vw;
+}
+.equalizerAreaRun {
+    width: 45vw;
+    height: 20vw;
+    display: flex;
+    position: absolute;
+    top: 3vw;
+}
+.lizerPartsRun {
+    width: 10vw;
+    height: 19.5vw;
+    background-color: rgba(7, 7, 7, 0.653);
+    margin: 0.4vw;
+}
+
+#lizerPartsRun1 {
+    animation: run 0.8s ease-in-out infinite 0ms alternate;
+    animation-play-state: paused;
+}
+#lizerPartsRun2 {
+    animation: run 0.6s ease-in infinite 0ms alternate;
+    animation-play-state: paused;
+}
+#lizerPartsRun3 {
+    animation: run 0.8s ease infinite 0ms alternate;
+    animation-play-state: paused;
+}
+
+#lizerPartsRun4 {
+    animation: run 0.6s ease-in-out infinite 0ms alternate;
+    animation-play-state: paused;
+}
+#lizerPartsRun5 {
+    animation: run 0.8s linear infinite 0ms alternate;
+    animation-play-state: paused;
+}
+#lizerPartsRun6 {
+    animation: run 0.6s ease-out infinite 0ms alternate;
+    animation-play-state: paused;
+}
+#lizerPartsRun7 {
+    animation: run 0.8s ease infinite alternate;
+    animation-play-state: paused;
+}
+@keyframes run {
+    0% {
+        height: 19.5vw;
+    }
+    50% {
+        height: 10vw;
+    }
+    100% {
+        height: 0vw;
+    }
+}
+.playPause {
+    width: 5vw;
+    height: 5vw;
+    color: rgb(253, 156, 59);
+    background-color: white;
+    border:0.25vw solid rgb(253, 156, 59);
+    font-size:1.2vw;
+    border-radius: 50%;
+    position: absolute;
+}
+.playPause:hover{
+    background-color: rgb(253, 156, 59);
+    color: white;
+}
+#playPause {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vw;
+}
+.pause {
+    display: none;
+}
+.range{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bassVolm{
+margin-left:30vw;
+}
+.range input{
+    width: 12vw;
+    height:5vw;
+    margin:-4vw 8vw;
+    padding:4vw 0vw;
+}
+.rng{
+    font-size:1.6vw;
+    color: rgb(253, 156, 59);
+    font-weight: bold;
+    text-align: center;
+}
+
+#volPoint,#bassPoint{
+    color: aliceblue;
+    font-size:1vw;
+    background-color: rgb(253, 156, 59);
+    padding:0.4vw;
+    border-radius:1vw;
+}
+.info{
+    text-align: center;
+    color: rgb(253, 156, 59);
+    font-size:3vw;
+    font-weight: bold;
+    font-family:monospace;
+}

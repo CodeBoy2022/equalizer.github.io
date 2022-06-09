@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music equalizer</title>
+    <link rel="stylesheet" href="musicEqualizer.css">
+    <script src="musicEqualizer.js"></script>
+</head>
+
+<body>
+    <div class="mainArea">
+        <div class="equalizerMainArea">
+            <div class="equalizerArea">
+                <div class="lizerParts">
+                    <div class="lizer1"></div>
+                    <div class="lizer1"></div>
+                    <div class="lizer1"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                </div>
+                <div class="lizerParts">
+                    <div class="lizer1"></div>
+                    <div class="lizer1"></div>
+                    <div class="lizer1"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                </div>
+                <div class="lizerParts">
+                    <div class="lizer1"></div>
+                    <div class="lizer1"></div>
+                    <div class="lizer1"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                </div>
+                <div class="lizerParts">
+                    <div class="lizer1"></div>
+                    <div class="lizer1"></div>
+                    <div class="lizer1"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                </div>
+                <div class="lizerParts">
+                    <div class="lizer1"></div>
+                    <div class="lizer1"></div>
+                    <div class="lizer1"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                </div>
+                <div class="lizerParts">
+                    <div class="lizer1"></div>
+                    <div class="lizer1"></div>
+                    <div class="lizer1"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                </div>
+                <div class="lizerParts">
+                    <div class="lizer1"></div>
+                    <div class="lizer1"></div>
+                    <div class="lizer1"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer2"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                    <div class="lizer3"></div>
+                </div>
+            </div>
+            <div class="equalizerAreaRun"> 
+                <div id="lizerPartsRun1" class="lizerPartsRun"></div>
+                <div id="lizerPartsRun2" class="lizerPartsRun"></div>
+                <div id="lizerPartsRun3" class="lizerPartsRun"></div>
+                <div id="lizerPartsRun4" class="lizerPartsRun"></div>
+                <div id="lizerPartsRun5" class="lizerPartsRun"></div>
+                <div id="lizerPartsRun6" class="lizerPartsRun"></div>
+                <div id="lizerPartsRun7" class="lizerPartsRun"></div>
+            </div>
+       
+            <div class="equalizerControl">
+            
+              <div id="playPause">
+                  <button id="play" class="play playPause" onclick="equalizerRun()">Play</button>
+                  <button id="pause" class="pause playPause" onclick="equalizerStop()">Pause</button>
+                </div>
+                <div class="range">
+                    <div class="rng">
+                        <span>Volumes <b id="volPoint">50%</b></span>
+                        <input onclick="volumeControl()" id="volume" type="range">
+                    </div>
+                    <div class="rng">
+                        <span>Bass <b id="bassPoint">50%</b></span>
+                        <input id="bass" onclick="volumeControl()" type="range">
+                    </div>
+                </div> 
+                <div class="songs">
+                    <div class="info">Equalizer</div>
+                    <audio id="song">
+                        <source src="Lost-Sky-Where-We-Started-feat-Jex-NCS-Release_U9pGr6KMdyg.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
